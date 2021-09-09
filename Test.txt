@@ -1,0 +1,167 @@
+Script started on Sun Apr 21 18:48:26 2019
+]0;zieli004@empress:~/CS311Progs/HWPrograms/forHW7[?1034h[zieli004@empress forHW7]$ eximacs slist.cpllist.cpdgraph.chw7client.cp[3Pdgraph.c[1Pstack.cp[2Pcp[6Pstack.cpemacs dgraph.cpetectCycle.te[2Phw7client.cplscp  ../forHW1/HW1P1_stack/stack.* [15P6/*.cpp[C[[2Ph[C[lscd forH[4P.emacs llist.cpdgraph.cp[2Pcp[2P[1Praph.llist.cplscd forHW[3@emacs[C[C[C[C[C[Clscd .more @@read-lscd forHWlscd HWProgramlscd CS311Proglscd HWProgramlscd forHWlsmore @@read-[9Pcd .[3Pemacs forH[3Pcd[C[C[C[C[C[C[lsemacs llist.cp[2Pdraphgraph.cp[2Pc[1Pllist.cp[10Pcd forHWlscp  ../forHW6/*.h [2@cpp[C[[15@1/HW1P1_stack/stack.* [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clsemacs hw7client.cpdetectCycle.t[5Pgraph.c[7Pstack.cpemacs stack.cp[2Pcpdgraph.chw7client.cp[3Pdgraph.c[1Pllist.cpslist.cxit[Kg++ hw7client.cpp llist.cpp slist.cpp dgraph.cpp stack.cpp
+]0;zieli004@empress:~/CS311Progs/HWPrograms/forHW7[zieli004@empress forHW7]$ ./a.out
+-------------------------------------------
+  Out   Visit    Adj
+-------------------------------------------
+A 2 |    0     |B| |F| 
+
+B 2 |    0     |C| |G| 
+
+C 1 |    0     |H| 
+
+D 0 |    0     The list is empty.
+
+E 0 |    0     The list is empty.
+
+F 2 |    0     |I| |E| 
+
+G 0 |    0     The list is empty.
+
+H 2 |    0     |G| |I| 
+
+I 3 |    0     |A| |G| |E| 
+
+Visiting A as 1
+... pushing |B| |F| 
+STACK:
+---------
+B
+F
+--------------
+B removed from stack.
+Visiting B as 2
+... pushing |C| |G| 
+STACK:
+---------
+C
+G
+F
+--------------
+
+C removed from stack.
+Visiting C as 3
+... pushing |H| 
+STACK:
+---------
+H
+G
+F
+--------------
+
+H removed from stack.
+Visiting H as 4
+... pushing |G| |I| 
+STACK:
+---------
+G
+I
+G
+F
+--------------
+
+G removed from stack.
+Visiting G as 5
+Deadend. Backup.
+STACK:
+---------
+I
+G
+F
+--------------
+
+I removed from stack.
+Visiting I as 6
+... pushing |A| |G| |E| 
+STACK:
+---------
+A
+G
+E
+G
+F
+--------------
+
+A removed from stack.
+A had been visited already - backup.
+STACK:
+---------
+G
+E
+G
+F
+--------------
+
+G removed from stack.
+G had been visited already - backup.
+STACK:
+---------
+E
+G
+F
+--------------
+
+E removed from stack.
+Visiting E as 7
+Deadend. Backup.
+STACK:
+---------
+G
+F
+--------------
+
+G removed from stack.
+G had been visited already - backup.
+STACK:
+---------
+F
+--------------
+
+F removed from stack.
+Visiting F as 8
+... pushing |I| |E| 
+STACK:
+---------
+I
+E
+--------------
+
+I removed from stack.
+I had been visited already - backup.
+STACK:
+---------
+E
+--------------
+
+E removed from stack.
+E had been visited already - backup.
+STACK:
+---------
+[ empty ]
+--------------
+
+-------------------------------------------
+  Out   Visit    Adj
+-------------------------------------------
+A 2 |    1     |B| |F| 
+
+B 2 |    2     |C| |G| 
+
+C 1 |    3     |H| 
+
+D 0 |    0     The list is empty.
+
+E 0 |    7     The list is empty.
+
+F 2 |    8     |I| |E| 
+
+G 0 |    5     The list is empty.
+
+H 2 |    4     |G| |I| 
+
+I 3 |    6     |A| |G| |E| 
+
+]0;zieli004@empress:~/CS311Progs/HWPrograms/forHW7[zieli004@empress forHW7]$ exit
+exit
+
+Script done on Sun Apr 21 18:49:17 2019
